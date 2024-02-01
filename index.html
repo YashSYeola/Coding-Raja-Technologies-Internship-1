@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeGen</title>
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="resume-form">
+        <h1 class="text-center my-1">Resume Generator</h1>
+        <p class="text-center">Create ATS friendly Resume</p>
+        <p></p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                      About
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="nameField">Name:</label>
+                            <input type="text" id="nameField" placeholder="Enter your name" class="form-control my-1">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="objectiveField">Objective:</label>
+                            <input type="text" id="objectiveField" placeholder="Seeking a challenging position in a reputed organization" class="form-control my-1">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mt-2">
+                                    <label for="emailField">Email:</label>
+                                    <input type="email" id="emailField" placeholder="Enter your email" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="phoneField">Phone:</label>
+                                    <input type="tel" id="phoneField" placeholder="Enter your phone number" class="form-control my-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="websiteField">Website:</label>
+                                    <input type="text" id="websiteField" placeholder="Enter your portfolio link" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="cityField">City:</label>
+                                    <input type="text" id="cityField" placeholder="Enter your city" class="form-control my-1">
+                                </div>
+                            </div>
+                        </div>
+
+
+                          <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mt-2">
+                                    <label for="githubField">Github Link</label>
+                                    <input type="email" id="githubField" placeholder="Enter your Github" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="linkedinField">Linkedin Link</label>
+                                    <input type="tel" id="linkedinField" placeholder="Enter your Linkedin" class="form-control my-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                      Education
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mt-2">
+                                    <label for="collegeField">College</label>
+                                    <input type="text" id="collegeField" placeholder="Enter College" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="dateField">Date</label>
+                                    <input type="text" id="dateField" placeholder="Enter Duration" class="form-control my-1">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mt-1">
+                                    <label for="degreeField">Degree And Major</label>
+                                    <input type="text" id="degreeField" placeholder="Enter Degree" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-1">
+                                    <label for="cgpaField">Percentage/CGPA</label>
+                                    <input type="text" id="cgpaField" placeholder="Percentage or CGPA" class="form-control my-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-2 ">
+                            <label for="additionalInfoField">Skills</label>
+                            <textarea name="additionalInfoField" id="additionalInfoField" cols="30" rows="4" class="form-control my-1"></textarea>
+                        
+                        </div>
+                      
+                        <div class="row">
+                        
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="educationCityField">City</label>
+                                    <input type="text" id="educationCityField" placeholder="Enter city" class="form-control my-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4" id="we">
+                <div class="card " id="weField">
+                    <div class="card-header">
+                      Work Experience
+                    </div>
+                    <div class="card-body ">
+                        <div class="form-group mt-1">
+                            <label for="companyField">Company</label>
+                            <input type="text" id="companyField" placeholder="Add Company" class="form-control my-1">
+                        </div>
+                      
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="jobField">Job Title</label>
+                                    <input type="text" id="jobField" placeholder="Enter your position" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-2">
+                                    <label for="jobDurationField">Duration</label>
+                                    <input type="text" id="jobDurationField" placeholder="Enter your Duration" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="weSkills">Skills</label>
+                                <input type="text" id="weSkills" placeholder="Add Skill" class="form-control my-1">
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-md-12">
+                                    <a class="btn btn-outline-dark" onclick="addNewExpField()" id="addExpBtn">Add Experience</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div id="experienceContainer"></div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card newPField">
+                    <div class="card-header" id="newProject">
+                      Projects                      
+                    </div>
+                    <div class="card-body ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mt-1">
+                                    <label for="pNameField">Project Name</label>
+                                    <input type="text" id="pNameField" placeholder="Enter Project" class="form-control my-1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="class-group mt-1">
+                                    <label for="pDurationField">Duration</label>
+                                    <input type="text" id="pdurationField" placeholder="Enter Duration" class="form-control my-1">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="pDescriptionField">Description</label>
+                            <textarea name="pDescriptionField" id="pDescriptionField" cols="30" rows="5" class="form-control my-1"></textarea>
+                            <div class="row text-end mt-3">
+                                <div class="col-md-12" id="addprojectBtn">
+                                    <a class="btn btn-outline-dark"  onclick="addnewProjectField()">Add Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     
+                    </div>
+                </div>
+                <div id="projectContainer"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-group mt-1">
+                <div class="row text-center mt-3">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-outline-success btn-lg mb-4" onclick="generateResume()">Generate Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="resume-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!-- first col -->
+                <img src="/assets/dp.jpg" alt="" class="img-fluid myImage">
+                
+                <div class="container mt-3">
+                    
+                    <p id="nameT1">Abhinav Saxena</p>
+                    <p id="cityT">Kanpur</p>
+                    <p id="objectiveT">Motivated Web Developer</p>
+                    <p id="phoneT">+91 7565893606</p>
+                    <hr>
+                    <p>
+                        <a href="#" id="portfolioT">Portfolio</a>
+                    </p>
+                    <p>
+                        <a href="#" id="gmailT">Gmail</a>
+                    </p>
+                    <p>
+                        <a href="#" id="githubT">Github</a>
+                    </p>
+                    <p>
+                        <a href="#" id="linkedinT">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8 py-3">
+                <h1 class="text-center" style="font-weight: 900;" id="nameT2">Abhinav Saxena</h1>
+
+                <!-- Education Card -->
+                <div class="card mt-4">
+                    <div class="card-header" style="background-color: aqua;">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-body">
+                            <div>
+                                <span id="collegeT">Bennett Univeristy</span><span class="float-end" id="collegeDurationT">2020-2024</span>
+                                <p class="text-primary" id="collegeCityT">Greater Noida</p>
+                            </div>
+                            <div>
+                                <span id="degreeFieldT">B.Tech in Computer Science</span>
+                                <p class="text-secondary" id="cgpaT">9.0</p>
+                            </div>
+                    </div>
+                </div>
+                <!-- Work Experience Card -->
+                <div class="card mt-4">
+                    <div class="card-header" style="background-color: aqua;">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div>
+                                <div id="companyFieldT" class="d-inline">Wormos</div><span class="float-end" id="jobDurationFieldT">2020-2024</span>
+                                <p></p>
+                               
+                            </div>
+                            <div>
+                                <span id="jobFieldT">Flutter Developer Intern</span> 
+                            </div>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li id="jobSkillsT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projects -->
+                <div class="card mt-4">
+                    <div class="card-header" style="background-color: aqua;">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div>
+                                <span id="pNameFieldT">Ethos</span>  <div class="float-end d-inline" id="pDurationFieldT">July 2023 - August 2023</div>
+                            </div>
+                            <p></p>
+                            <div>
+                                <p>Description</p>
+                                
+                            </div>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li id="pDescriptionFieldT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button class="btn" onclick="printResume()" style="background-color: aqua;">
+                        Print Resume
+                    </button>
+                    <button class="btn" onclick="generateAgainResume()" style="background-color: aqua;">
+                        Generate Again
+                    </button>
+                </div>
+                <!-- second col -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

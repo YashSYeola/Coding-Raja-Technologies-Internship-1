@@ -1,0 +1,21 @@
+/* #resume-form{
+    display: none;
+} */
+.background{
+    background-color: aqua;
+}
+
+.myImage{
+ 
+    border-radius: 50%;
+    width: 200px;
+}
+
+#resume-template{
+    display: none;
+}
+
+
+.background-header{
+    background-color: aqua;
+}
